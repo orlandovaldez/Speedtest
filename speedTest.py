@@ -1,6 +1,6 @@
 import speedtest
 
-st = speedtest.SpeedTest()
+st = speedtest.Speedtest()
 
 option = int(input('''What speed would you like to test?
 1) Download Speed
@@ -9,7 +9,7 @@ option = int(input('''What speed would you like to test?
 \nYour Choice: '''))
 
 if option == 1:
-    print(st.download())    
+    print(st.download(), "Mb/s")    
 elif option == 2:
     print(st.upload())
 elif option == 3:
